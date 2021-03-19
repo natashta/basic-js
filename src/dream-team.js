@@ -4,6 +4,8 @@ module.exports = function createDreamTeam(members) {
   if (!Array.isArray(members)) {
     throw new CustomError('Not implemented');
   }
+  if (typeof members !== 'object')
+  	return false;
   let teamName = [];
   members.forEach((el) => {
     if (typeof el !== 'string') return false;
