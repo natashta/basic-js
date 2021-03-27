@@ -12,7 +12,7 @@ const chainMaker = {
     return this;
   },
   removeLink(position) {
-  if (position < 0 || position > this.chain.length){
+  if (isNaN(position) || position < 0 || position > this.chain.length){
       this.chain = [];
       throw new CustomError('Not implemented');
     }

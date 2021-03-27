@@ -1,7 +1,7 @@
 const CustomError = require("../extensions/custom-error");
 
 module.exports = function getSeason(date) {
-  if (!date)throw new CustomError('Not implemented');
+  if (!date) throw new CustomError('Not implemented')
   let month = date.getUTCMonth();
   
     if (month >= 2 && month <= 4) {
