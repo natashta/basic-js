@@ -2,7 +2,7 @@ const CustomError = require("../extensions/custom-error");
 
 module.exports = function createDreamTeam(members) {
   if (!Array.isArray(members)) {
-    throw new CustomError('Not implemented');
+    return false;
   }
   if (typeof members !== 'object')
   	return false;

@@ -1,7 +1,9 @@
 const CustomError = require("../extensions/custom-error");
 
 module.exports = function getSeason(date) {
-  if (!date) throw new CustomError('Not implemented')
+  if (!date) {
+    return "Unable to determine the time of year!";
+  }
   let month = date.getUTCMonth();
   
     if (month >= 2 && month <= 4) {
